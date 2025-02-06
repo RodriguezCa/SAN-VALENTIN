@@ -4,75 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¿Will u be my VALENTINE?</title>
-
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-            body {
-              font-family: "Arial", sans-serif;
-              background-color: #ffe6e6;
-              text-align: center;
-              padding: 100px;
-              background-image: url(https://media-mty2-1.cdn.whatsapp.net/v/t61.24694-24/471413323_1313706716646569_8429012798777620119_n.jpg?ccb=11-4&oh=01_Q5AaIENVI1G_d5faXjnDykXdbA5txZt9ETN31u5PuNa0F6XH&oe=67A8A804&_nc_sid=5e03e0&_nc_cat=106);
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-              background-position: center;
-              background-repeat: repeat;
-            }
-            .envelope {
-              position: relative;
-              width: 300px;
-              height: 200px;
-              background-color: #fff;
-              margin: auto;
-              cursor: pointer;
-              transition: transform 0.5s;
-            }
-            .envelope:before,
-            .envelope:after {
-              content: "";
-              position: absolute;
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 100px 150px;
-              border-color: transparent transparent #ff4d4d transparent;
-              top: 0;
-              left: 0;
-              transition: border-color 0.5s;
-            }
-            .envelope:after {
-              top: auto;
-              bottom: 0;
-              border-color: #ff4d4d transparent transparent transparent;
-            }
-            .message {
-              display: none;
-              padding: 100px;
-              background-color: #fff;
-              border-radius: 10px;
-              box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
-              margin-top: 20px;
-              font-family: 'Dancing Script', cursive;
-                  font-size: 20px;
-                  color: #ff4d4d;
-            }
-            .envelope.open .message {
-              display: block;
-            }
-            .envelope.open {
-              display: none;
-            }
-
-              }
-              @keyframes float {
-                  0% {
-                      transform: translateY(0);
-                  }
-                  50% {
-                      transform: translateY(-20px);
-                  }
-                  100% {
-                      transform: translateY(0);
-                  }
+      body {
+        font-family: "Dancing Script", cursive;
+        background-color: #ffe6e6;
+        text-align: center;
+        padding: 50px;
+        background-image: url("https://media-mty2-1.cdn.whatsapp.net/v/t61.24694-24/471413323_1313706716646569_8429012798777620119_n.jpg?ccb=11-4&oh=01_Q5AaIENVI1G_d5faXjnDykXdbA5txZt9ETN31u5PuNa0F6XH&oe=67A8A804&_nc_sid=5e03e0&_nc_cat=106");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .envelope {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        margin: auto;
+        cursor: pointer;
+        transition: transform 0.5s;
+      }
+      .envelope:before,
+      .envelope:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 150px;
+        border-color: transparent transparent #ff4d4d transparent;
+        top: 0;
+        left: 0;
+        transition: border-color 0.5s;
+      }
+      .envelope:after {
+        top: auto;
+        bottom: 0;
+        border-color: #ff4d4d transparent transparent transparent;
+      }
+      .message {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        font-family: "Dancing Script", cursive;
+        font-size: 20px;
+        color: #ff4d4d;
+      }
+      .envelope.open .message {
+        display: block;
+      }
+      .envelope.open {
+        display: none;
+      }
+      .flowers {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url("https://example.com/flower.png"); /* Reemplaza con la URL de la imagen de la flor */
+        background-size: cover;
+        animation: float 5s infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   <body>
@@ -87,7 +94,6 @@
           y te prometo que siempre trataré de hacerte feliz porque te lo
           mereces.
         </p>
-
         <p>
           En este mes de San Valentín, quiero pedirte que seas mi Valentine y
           que sigamos creando recuerdos juntos por siempre.
